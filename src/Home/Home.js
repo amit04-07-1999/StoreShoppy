@@ -255,10 +255,13 @@ const Home = () => {
             <div class="mx-auto max-w-7xl">
                 <div class="flex flex-col md:flex-row justify-between py-4 md:py-8">
                     <div class="w-full md:w-1/2 px-4">
-                        <h1 class="text-xl md:text-4xl font-bold text-gray-500">
-                            ━━━━━ Evaluation ━━━━━
-                            <div class="md:ml-60 ml-36">stage</div>
-                        </h1>
+                        <div class="col-span-5 md:col-span-5">
+                            <div class="flex justify-center items-center gap-4">
+                                <hr class="border-1 w-full border-gray-400" />
+                                <h4 class="mt-3 text-center text-4xl font-bold text-gray-500">Evaluation stage</h4>
+                                <hr class="border-1 w-full border-gray-400" />
+                            </div>
+                        </div>
                         <div class="mt-2 md:mt-4 flex justify-evenly md:ml-60 ml-44">
                             <span class="font-bold text-lg md:text-2xl text-amber-300">
                                 Student
@@ -267,70 +270,83 @@ const Home = () => {
                                 Practitioner
                             </span>
                         </div>
-                        <div class="mt-4 space-y-2 rounded-md cursor-pointer md:ml-12">
-                            <div className="flex justify-around py-3 rounded-md hover:bg-gray-300 font-semibold">
-                                <span>Trading Period</span>
-                                <span>∞</span>
-                                <span>∞</span>
-                            </div>
-                            <div className="flex justify-around py-3 rounded-md hover:bg-gray-300 font-semibold">
-                                <span>Minimum Trading Days</span>
-                                <span>0 days</span>
-                                <span>0 days</span>
-                            </div>
-                            <div className="flex justify-around py-3 rounded-md hover:bg-gray-300 font-semibold">
-                                <span>Maximum Daily Loss</span>
-                                <span>5%</span>
-                                <span>5%</span>
-                            </div>
-                            <div className="flex justify-around py-3 rounded-md hover:bg-gray-300 font-semibold">
-                                <span>Maximum Loss</span>
-                                <span>10%</span>
-                                <span>10%</span>
-                            </div>
-                            <div className="flex justify-around py-3 rounded-md hover:bg-gray-300 font-semibold">
-                                <span>Profit Target</span>
-                                <span>$8,000 (8%)</span>
-                                <span>$5,000 (5%)</span>
-                            </div>
-                            <div className="flex justify-around py-3 rounded-md hover:bg-gray-300 font-semibold">
-                                <span>Leverage</span>
-                                <span>1:100</span>
-                                <span>1:100</span>
-                            </div>
+                        <div class="overflow-x-auto">
+                            <table class="table-auto min-w-full font-semibold">
+                                <tbody>
+                                    <tr>
+                                        <td class="px-4 py-2">Trading Period</td>
+                                        <td class="px-4 py-2">∞</td>
+                                        <td class="px-4 py-2">∞</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-2">Minimum Trading Days</td>
+                                        <td class="px-4 py-2">0 days</td>
+                                        <td class="px-4 py-2">0 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-2">Maximum Daily Loss</td>
+                                        <td class="px-4 py-2">5%</td>
+                                        <td class="px-4 py-2">5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-2">Maximum Loss</td>
+                                        <td class="px-4 py-2">10%</td>
+                                        <td class="px-4 py-2">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-2">Profit Target</td>
+                                        <td class="px-4 py-2">$8,000 (8%)</td>
+                                        <td class="px-4 py-2">$5,000 (5%)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-2">Leverage</td>
+                                        <td class="px-4 py-2">1:100</td>
+                                        <td class="px-4 py-2">1:100</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
+
                     </div>
                     <div class="w-full md:w-1/2 px-4 mt-6 md:mt-0">
-                        <h1 class="text-2xl md:text-4xl font-bold text-gray-500">
-                            ━━━━━ Funded ━━━━━
-                            <div class="md:ml-52 ml-36">stage</div>
-                        </h1>
+                        <div class="col-span-5 md:col-span-5">
+                            <div class="flex justify-center items-center gap-4">
+                                <hr class="border-1 w-full border-gray-400" />
+                                <h4 class="mt-3 text-center text-4xl font-bold text-gray-500">Funded stage</h4>
+                                <hr class="border-1 w-full border-gray-400" />
+                            </div>
+                        </div>
                         <div class="mt-2 flex justify-center md:justify-around md:ml-60 ml-44">
                             <span class="font-bold text-lg md:text-2xl text-indigo-500">Master</span>
                         </div>
                         <div class="mt-4 p-4 justify-center">
-                            <div className="space-y-2 rounded-md cursor-pointer">
-                                <div className="flex justify-around py-3 rounded-md hover:bg-gray-300 font-semibold">
-                                    <span>Trading Period</span>
-                                    <span>∞</span>
-                                </div>
-                                <div className="flex justify-around py-3 rounded-md hover:bg-gray-300 font-semibold">
-                                    <span>Maximum Daily Loss</span>
-                                    <span>5%</span>
-                                </div>
-                                <div className="flex justify-around py-3 rounded-md hover:bg-gray-300 font-semibold">
-                                    <span>Maximum Loss</span>
-                                    <span>10%</span>
-                                </div>
-                                <div className="flex justify-around py-3 rounded-md hover:bg-gray-300 font-semibold">
-                                    <span>Profit Target</span>
-                                    <span>-</span>
-                                </div>
-                                <div className="flex justify-around py-3 rounded-md hover:bg-gray-300 font-semibold">
-                                    <span>Leverage</span>
-                                    <span>1:100</span>
-                                </div>
+                            <div class="overflow-x-auto">
+                                <table class="table-auto min-w-full font-semibold">
+                                    <tbody>
+                                        <tr>
+                                            <td class="px-4 py-2">Trading Period</td>
+                                            <td class="px-4 py-2">∞</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2">Maximum Daily Loss</td>
+                                            <td class="px-4 py-2">5%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2">Maximum Loss</td>
+                                            <td class="px-4 py-2">10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2">Profit Target</td>
+                                            <td class="px-4 py-2">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2">Leverage</td>
+                                            <td class="px-4 py-2">1:100</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
+
                             <button class="inline-flex items-center justify-center rounded-md border-solid border-2 border-sky-600 h-12 md:h-14 px-4 md:px-8 py-2 md:py-4 mt-4 md:mt-8 md:ml-20 text-base md:text-xl font-semibold text-sky-600">
                                 Refund + Profit Splits
                             </button>
