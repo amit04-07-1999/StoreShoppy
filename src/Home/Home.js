@@ -259,7 +259,7 @@ const Home = () => {
                             ━━━━━ Evaluation ━━━━━
                             <div class="md:ml-60 ml-36">stage</div>
                         </h1>
-                        <div class="mt-2 md:mt-4 flex justify-evenly md:ml-12 ml-44">
+                        <div class="mt-2 md:mt-4 flex justify-evenly md:ml-60 ml-44">
                             <span class="font-bold text-lg md:text-2xl text-amber-300">
                                 Student
                             </span>
@@ -305,7 +305,7 @@ const Home = () => {
                             ━━━━━ Funded ━━━━━
                             <div class="md:ml-52 ml-36">stage</div>
                         </h1>
-                        <div class="mt-2 flex justify-center md:justify-around md:ml-32 ml-40">
+                        <div class="mt-2 flex justify-center md:justify-around md:ml-60 ml-44">
                             <span class="font-bold text-lg md:text-2xl text-indigo-500">Master</span>
                         </div>
                         <div class="mt-4 p-4 justify-center">
